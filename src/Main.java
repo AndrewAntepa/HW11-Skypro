@@ -1,12 +1,10 @@
-import java.time.LocalDate;
-
 public class Main {
     public static boolean isLeapYear(int year) {
         return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
     }
 
     public static String operationSystem(int year, int OS) {
-        int currentYear = LocalDate.now().getYear();
+        int currentYear = 2015;
         String answer = "";
         if (OS == 0) {
             if (currentYear > year) {
@@ -21,9 +19,9 @@ public class Main {
     }
 
     public static int delivery(int distance) {
-        if(distance <= 20) return 1;
-        else if(distance <= 60) return 2;
-        else if(distance <= 100) return 3;
+        if(distance <= 20){ return 1;}
+        else if(distance <= 60){ return 2;}
+        else if(distance <= 100){ return 3;}
         else return -1;
     }
 
